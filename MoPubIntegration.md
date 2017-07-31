@@ -17,23 +17,33 @@ You can use **Avocarrot** network in **MoPub** mediation platform.
 
 * Integrate with MoPub SDK [https://github.com/mopub/mopub-ios-sdk/wiki/Getting-Started](https://github.com/mopub/mopub-ios-sdk/wiki/Getting-Started)
 * Add [Avocarrot SDK](https://github.com/avocarrot/avocarrot-ios-sdk) to your project
+* Include files needed for you into your project.
+Files needed for each ad type:
+
+| Ad type | Classes |
+|:----------------|:----------------|
+| Banners | `AvocarrotMoPubBannerCustomEvent` |
+| Interstitial | `AvocarrotMoPubInterstitialCustomEvent` |
+| Native | `AvocarrotMoPubNativeCustomEvent`, `AvocarrotMoPubCustomAdapter` |
+
+* Use tutorial how to [integrate custom networks](https://www.mopub.com/resources/docs/mopub-ui-account-setup/ad-network-set-up/)
 
 
-## 2. Setup MoPub Dashboard
+## 2. Setup MoPub Dashboard for Native
 
 Create an "Avocarrot" network in MoPub dashboard and connect it to your Ad Units.
 
 * In MoPub dashboard select Networks  > Add New network
 
-![_networks](https://raw.githubusercontent.com/avocarrot/avocarrot-ios-adapters/master/images/first_step.png)
+![_networks](https://raw.githubusercontent.com/avocarrot/ios-adapters/master/images/first_step.png)
 
 * Then select Custom Native Network
 
-![_add-new-network](https://raw.githubusercontent.com/avocarrot/avocarrot-ios-adapters/master/images/second_step.png)
+![_add-new-network](https://raw.githubusercontent.com/avocarrot/ios-adapters/master/images/second_step.png)
 
 * Complete the fields according to the Ad Unit that you want to use
 
-![_setup](https://raw.githubusercontent.com/avocarrot/avocarrot-ios-adapters/master/images/third_step.png)
+![_setup](https://raw.githubusercontent.com/avocarrot/ios-adapters/master/images/third_step.png)
 
 
 
@@ -55,11 +65,7 @@ AvocarrotMoPubNativeCustomEvent
 {"adUnit":"<AvocarrotAdUnit>"}
 ```
 
-Get your adUnit from the [Avocarrot dashboard](https://ui.ampiri.com/).
-
-- Include [`AvocarrotMoPubNativeCustomEvent`](linkHere) and [`AvocarrotMoPubCustomAdapter`](linkHere) into your project.
-
-
+Get your adUnit from the [Avocarrot dashboard](https://www.avocarrot.com/).
 
 ## 4. Ready to go
 
@@ -72,4 +78,4 @@ Congratulations! You have now successfully integrated **Avocarrot** ad network a
 - If at any point you need any technical help, please get in touch with [Avocarrot Support](https://docs.ampiri.com/)
 
 ## Clone the Example Project
-* `git clone https://github.com/avocarrot/avocarrot-ios-adapters.git`
+* `git clone https://github.com/avocarrot/ios-adapters.git`
