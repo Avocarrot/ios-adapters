@@ -22,6 +22,10 @@
 		BF2D33761EE6FD42000FE1FA /* AvocarrotAdMobCustomEventInterstitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2D33751EE6FD42000FE1FA /* AvocarrotAdMobCustomEventInterstitial.swift */; };
 		BF2D33781EE70542000FE1FA /* GoogleMobileAdsBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2D33771EE70542000FE1FA /* GoogleMobileAdsBannerViewController.swift */; };
 		BF2D337A1EE705E8000FE1FA /* GoogleMobileAdsInterstitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2D33791EE705E8000FE1FA /* GoogleMobileAdsInterstitialViewController.swift */; };
+		BF514F401F0A7C5F00950B68 /* AvocarrotMoPubInterstitialCustomEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF514F3F1F0A7C5F00950B68 /* AvocarrotMoPubInterstitialCustomEvent.swift */; };
+		BF514F421F0A8DFA00950B68 /* AvocarrotMoPubBannerCustomEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF514F411F0A8DFA00950B68 /* AvocarrotMoPubBannerCustomEvent.swift */; };
+		BF514F441F0AA47700950B68 /* MoPubBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF514F431F0AA47700950B68 /* MoPubBannerViewController.swift */; };
+		BF514F461F0AA4A300950B68 /* MoPubInterstitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF514F451F0AA4A300950B68 /* MoPubInterstitialViewController.swift */; };
 		BF7FC9A41ECC9CCD0018BE4A /* AvocarrotAdMobCustomEventNativeAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7FC99F1ECC9CCD0018BE4A /* AvocarrotAdMobCustomEventNativeAd.swift */; };
 		BF7FC9A51ECC9CCD0018BE4A /* AvocarrotAdMobMediatedNativeContentAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7FC9A01ECC9CCD0018BE4A /* AvocarrotAdMobMediatedNativeContentAd.swift */; };
 		BF7FC9A61ECC9CCD0018BE4A /* AvocarrotMoPubCustomAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7FC9A21ECC9CCD0018BE4A /* AvocarrotMoPubCustomAdapter.swift */; };
@@ -48,6 +52,10 @@
 		BF2D33751EE6FD42000FE1FA /* AvocarrotAdMobCustomEventInterstitial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvocarrotAdMobCustomEventInterstitial.swift; sourceTree = "<group>"; };
 		BF2D33771EE70542000FE1FA /* GoogleMobileAdsBannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMobileAdsBannerViewController.swift; sourceTree = "<group>"; };
 		BF2D33791EE705E8000FE1FA /* GoogleMobileAdsInterstitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMobileAdsInterstitialViewController.swift; sourceTree = "<group>"; };
+		BF514F3F1F0A7C5F00950B68 /* AvocarrotMoPubInterstitialCustomEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvocarrotMoPubInterstitialCustomEvent.swift; sourceTree = "<group>"; };
+		BF514F411F0A8DFA00950B68 /* AvocarrotMoPubBannerCustomEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvocarrotMoPubBannerCustomEvent.swift; sourceTree = "<group>"; };
+		BF514F431F0AA47700950B68 /* MoPubBannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoPubBannerViewController.swift; sourceTree = "<group>"; };
+		BF514F451F0AA4A300950B68 /* MoPubInterstitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoPubInterstitialViewController.swift; sourceTree = "<group>"; };
 		BF7FC99F1ECC9CCD0018BE4A /* AvocarrotAdMobCustomEventNativeAd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvocarrotAdMobCustomEventNativeAd.swift; sourceTree = "<group>"; };
 		BF7FC9A01ECC9CCD0018BE4A /* AvocarrotAdMobMediatedNativeContentAd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvocarrotAdMobMediatedNativeContentAd.swift; sourceTree = "<group>"; };
 		BF7FC9A21ECC9CCD0018BE4A /* AvocarrotMoPubCustomAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvocarrotMoPubCustomAdapter.swift; sourceTree = "<group>"; };
@@ -116,6 +124,8 @@
 			children = (
 				BF7FC9A21ECC9CCD0018BE4A /* AvocarrotMoPubCustomAdapter.swift */,
 				BF7FC9A31ECC9CCD0018BE4A /* AvocarrotMoPubNativeCustomEvent.swift */,
+				BF514F3F1F0A7C5F00950B68 /* AvocarrotMoPubInterstitialCustomEvent.swift */,
+				BF514F411F0A8DFA00950B68 /* AvocarrotMoPubBannerCustomEvent.swift */,
 			);
 			path = MoPub;
 			sourceTree = "<group>";
@@ -144,6 +154,8 @@
 			children = (
 				BF057D2E1E701CDA00BBB49A /* ViewController.swift */,
 				BF057D401E70349200BBB49A /* MoPubTableViewController.swift */,
+				BF514F431F0AA47700950B68 /* MoPubBannerViewController.swift */,
+				BF514F451F0AA4A300950B68 /* MoPubInterstitialViewController.swift */,
 				BFC8DE881ECB5F9600387714 /* GoogleMobileAdsNativeViewController.swift */,
 				BF2D33771EE70542000FE1FA /* GoogleMobileAdsBannerViewController.swift */,
 				BF2D33791EE705E8000FE1FA /* GoogleMobileAdsInterstitialViewController.swift */,
@@ -320,13 +332,17 @@
 				BF2D337A1EE705E8000FE1FA /* GoogleMobileAdsInterstitialViewController.swift in Sources */,
 				BF7FC9A61ECC9CCD0018BE4A /* AvocarrotMoPubCustomAdapter.swift in Sources */,
 				BFC8DE891ECB5F9600387714 /* GoogleMobileAdsNativeViewController.swift in Sources */,
+				BF514F401F0A7C5F00950B68 /* AvocarrotMoPubInterstitialCustomEvent.swift in Sources */,
 				BF057D2F1E701CDA00BBB49A /* ViewController.swift in Sources */,
 				BF057D471E70349200BBB49A /* NativeAdCell.swift in Sources */,
 				BF057D461E70349200BBB49A /* SampleModel.swift in Sources */,
 				BF057D2D1E701CDA00BBB49A /* AppDelegate.swift in Sources */,
 				BF7FC9A71ECC9CCD0018BE4A /* AvocarrotMoPubNativeCustomEvent.swift in Sources */,
+				BF514F421F0A8DFA00950B68 /* AvocarrotMoPubBannerCustomEvent.swift in Sources */,
 				BF7FC9A41ECC9CCD0018BE4A /* AvocarrotAdMobCustomEventNativeAd.swift in Sources */,
 				BF2D33781EE70542000FE1FA /* GoogleMobileAdsBannerViewController.swift in Sources */,
+				BF514F461F0AA4A300950B68 /* MoPubInterstitialViewController.swift in Sources */,
+				BF514F441F0AA47700950B68 /* MoPubBannerViewController.swift in Sources */,
 				BF057D441E70349200BBB49A /* AdTableCell.swift in Sources */,
 				BF2D33761EE6FD42000FE1FA /* AvocarrotAdMobCustomEventInterstitial.swift in Sources */,
 				BF2D336F1EE6F57D000FE1FA /* AvocarrotAdMobCustomEventBanner.swift in Sources */,

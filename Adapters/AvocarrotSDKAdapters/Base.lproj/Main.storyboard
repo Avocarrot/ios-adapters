@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="R5T-6e-aaY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="R5T-6e-aaY">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -53,7 +53,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="jNe-hT-XWo" kind="show" id="9Jj-mk-raZ"/>
+                                    <segue destination="I3V-OU-qsj" kind="show" id="ee5-dk-ynp"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avocarrot-logo" translatesAutoresizingMaskIntoConstraints="NO" id="mJd-QV-L2j">
@@ -92,7 +92,7 @@
             </objects>
             <point key="canvasLocation" x="786" y="346"/>
         </scene>
-        <!--Mo Pub Table View Controller-->
+        <!--Native-->
         <scene sceneID="TNK-dk-xeT">
             <objects>
                 <tableViewController id="jNe-hT-XWo" customClass="MoPubTableViewController" customModule="AvocarrotSDKAdapters" customModuleProvider="target" sceneMemberID="viewController">
@@ -106,7 +106,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="87"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="12Y-r0-Mit" id="n2K-XV-Jss">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="87"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="86.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNK-if-l24">
@@ -159,12 +159,13 @@
                             <outlet property="delegate" destination="jNe-hT-XWo" id="Y87-aE-jCq"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Native" id="Wzs-Xj-s9Y"/>
                     <navigationItem key="navigationItem" id="LEZ-NK-OSu"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ec-A4-iiv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1566" y="346"/>
+            <point key="canvasLocation" x="3070" y="-346"/>
         </scene>
         <!--Interstitial-->
         <scene sceneID="HQM-p0-yUJ">
@@ -185,6 +186,25 @@
             </objects>
             <point key="canvasLocation" x="785" y="1972"/>
         </scene>
+        <!--Interstitial-->
+        <scene sceneID="6Yv-if-ei5">
+            <objects>
+                <viewController id="4lX-61-o4b" customClass="MoPubInterstitialViewController" customModule="AvocarrotSDKAdapters" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="V6N-QA-xev"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bhm-dS-YCk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wza-LM-moQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.85211267609999997" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Interstitial" id="dLd-0V-HUj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N4V-EJ-bfl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3071" y="346"/>
+        </scene>
         <!--Banner-->
         <scene sceneID="Xzf-jx-Sfj">
             <objects>
@@ -198,7 +218,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MDH-Fy-HpD" customClass="GADBannerView">
-                                <rect key="frame" x="27" y="114" width="320" height="50"/>
+                                <rect key="frame" x="27" y="70" width="320" height="50"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="V0G-ox-fUM"/>
@@ -220,6 +240,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="403-9z-Vbx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-226" y="1973"/>
+        </scene>
+        <!--Banner-->
+        <scene sceneID="LzT-Ea-vkg">
+            <objects>
+                <viewController id="fSi-sM-kUV" customClass="MoPubBannerViewController" customModule="AvocarrotSDKAdapters" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kes-ek-9Rs"/>
+                        <viewControllerLayoutGuide type="bottom" id="o5k-f5-uSB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M05-Yz-GKa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SH8-Bu-dWy">
+                                <rect key="frame" x="27" y="70" width="320" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="h3x-qM-HRc"/>
+                                    <constraint firstAttribute="width" constant="320" id="pj3-N7-sMn"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.85211267609999997" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SH8-Bu-dWy" firstAttribute="top" secondItem="Kes-ek-9Rs" secondAttribute="bottom" constant="50" id="8lz-wu-wFo"/>
+                            <constraint firstItem="SH8-Bu-dWy" firstAttribute="centerX" secondItem="M05-Yz-GKa" secondAttribute="centerX" id="Oge-in-xZi"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Banner" id="tnN-wB-lf1"/>
+                    <connections>
+                        <outlet property="bannerView" destination="SH8-Bu-dWy" id="lME-3O-npd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jAz-1A-a3q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3070" y="1039"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="g2M-2S-Jlb">
@@ -245,6 +301,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vm0-93-2eF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="785" y="1136"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="UF7-Lb-G24">
+            <objects>
+                <tabBarController id="I3V-OU-qsj" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" id="wZw-Aa-Idu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.85211267609999997" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.94117647059999998" green="0.4039215686" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.94117647059999998" green="0.4039215686" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBar>
+                    <connections>
+                        <segue destination="fSi-sM-kUV" kind="relationship" relationship="viewControllers" id="XNs-ef-33g"/>
+                        <segue destination="4lX-61-o4b" kind="relationship" relationship="viewControllers" id="Nbw-6S-qVW"/>
+                        <segue destination="jNe-hT-XWo" kind="relationship" relationship="viewControllers" id="vVL-ox-JnG"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c0m-zY-rDc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1846" y="346"/>
         </scene>
         <!--Native-->
         <scene sceneID="mS0-fZ-N3g">

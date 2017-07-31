@@ -29,9 +29,15 @@ class AvocarrotAdMobCustomEventBanner: NSObject, GADCustomEventBanner {
         if  GADAdSizeEqualToSize(adSize, kGADAdSizeBanner) != true && GADAdSizeEqualToSize(adSize, kGADAdSizeLeaderboard) != true {
             let error = NSError(domain: "com.google.CustomEvent", code: 901)
             self.delegate?.customEventBanner(self, didFailAd: error)
+            return
         }
 
-        guard let ad  = AvocarrotSDK.shared.loadBanner(with: AVOBannerViewSizeSmall, adUnitId: adUnitId, success: { [weak self] (bannerAd) in
+        var size = AVOBannerViewSizeSmall
+        if GADAdSizeEqualToSize(adSize, kGADAdSizeLeaderboard) {
+            size = AVOBannerViewSizeLarge
+        }
+
+        guard let ad  = AvocarrotSDK.shared.loadBanner(with: size, adUnitId: adUnitId, success: { [weak self] (bannerAd) in
             guard let sSelf = self else {return}
             sSelf.delegate?.customEventBanner(sSelf, didReceiveAd: bannerAd)
         }, failure: { [weak self] (error) in

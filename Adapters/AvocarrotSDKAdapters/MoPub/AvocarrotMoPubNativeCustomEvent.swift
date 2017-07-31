@@ -32,30 +32,24 @@ open class AvocarrotMoPubNativeCustomEvent: MPNativeCustomEvent {
 
 		guard let adUnit = (info["adUnit" as NSObject] as? String) else { reportError("No AdUnit!"); return }
 
-        AvocarrotSDK.logEnabled = true
-        AvocarrotSDK.shared.loadNativeAd(withAdUnitId: adUnit, success: {[weak self] (nativeAd: AVONativeAssets) -> UIView? in
-            guard let sSelf = self else {return nil}
+        AvocarrotSDK.shared.loadNativeAd(withAdUnitId: adUnit, success: {(nativeAd: AVONativeAssets) -> UIView? in
 
-            nativeAd.onImpression({[weak self] in
-                guard let sSelf = self else {return}
-                sSelf.avocarrotCustomAdapter?.registerImpressionToMopub()
+            nativeAd.onImpression({
+                self.avocarrotCustomAdapter?.registerImpressionToMopub()
             })
-            .onClick({[weak self] in
-                guard let sSelf = self else {return}
-                sSelf.avocarrotCustomAdapter?.registerClickToMopub()
+            .onClick({
+                self.avocarrotCustomAdapter?.registerClickToMopub()
             })
-            .onLeftApplication({[weak self] in
-                guard let sSelf = self else {return}
-                sSelf.avocarrotCustomAdapter?.registerFinishHandlingClickToMopub()
+            .onLeftApplication({
+                self.avocarrotCustomAdapter?.registerFinishHandlingClickToMopub()
             })
 
-            sSelf.avocarrotCustomAdapter = AvocarrotMoPubCustomAdapter(ad: nativeAd)
-            sSelf.preloadAdImages(forNativeAd: nativeAd)
+            self.avocarrotCustomAdapter = AvocarrotMoPubCustomAdapter(ad: nativeAd)
+            self.preloadAdImages(forNativeAd: nativeAd)
 
             return nil
-        }) {[weak self] (_: AVOError) in
-            guard let sSelf = self else {return}
-            sSelf.reportError("AvocarrotSDK ad load error!")
+        }) {(_: AVOError) in
+            self.reportError("AvocarrotSDK ad load error!")
         }
 	}
 
