@@ -16,7 +16,7 @@ You can use **Avocarrot** network in **MoPub** mediation platform.
 ## 1. Setup SDKs
 
 * Integrate with MoPub SDK [https://github.com/mopub/mopub-ios-sdk/wiki/Getting-Started](https://github.com/mopub/mopub-ios-sdk/wiki/Getting-Started)
-* Add [Avocarrot SDK](https://github.com/avocarrot/avocarrot-ios-sdk) to your project
+* Add [Avocarrot SDK](https://github.com/avocarrot/ios-sdk) to your project
 * Include files needed for you into your project.
 Files needed for each ad type:
 
