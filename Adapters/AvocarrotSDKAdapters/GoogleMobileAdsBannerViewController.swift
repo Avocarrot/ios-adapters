@@ -24,11 +24,14 @@ class GoogleMobileAdsBannerViewController: UIViewController, GADBannerViewDelega
         bannerView.delegate = self
 
         let request = GADRequest()
+        request.testDevices = [kGADSimulatorID]
         bannerView.load(request)
     }
 
+    // MARK: - GADBannerViewDelegate
+
     func adView(_ bannerView: GADBannerView, didFailToReceiveAdWithError error: GADRequestError) {
-        print("AdMob returns error: \(error.localizedDescription)")
+        print("Error:  \(error.localizedDescription)")
     }
 
 }

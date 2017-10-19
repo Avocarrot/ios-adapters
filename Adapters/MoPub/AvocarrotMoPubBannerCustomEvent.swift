@@ -17,7 +17,7 @@ class AvocarrotMoPubBannerCustomEvent: MPBannerCustomEvent {
 
     override func requestAd(with size: CGSize,
                             customEventInfo info: [AnyHashable : Any]!) {
-        if CGSize(width: 320, height: 50) != size && CGSize(width: 728, height: 90) != size {
+        if CGSize(width: 320, height: 50) != size && CGSize(width: 728, height: 90) != size && CGSize(width: 300, height: 250) != size {
             requestDidFail()
             return
         }
@@ -25,6 +25,8 @@ class AvocarrotMoPubBannerCustomEvent: MPBannerCustomEvent {
         var avosize = AVOBannerViewSizeSmall
         if CGSize(width: 728, height: 90) == size {
             avosize = AVOBannerViewSizeLarge
+        } else if CGSize(width: 300, height: 250) == size {
+            avosize = AVOBannerViewSizeMREC
         }
 
         guard let adUnitId = info["adUnit"] else {

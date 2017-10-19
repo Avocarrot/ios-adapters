@@ -2,8 +2,8 @@
 //  NativeAdCell.swift
 //  AvocarrotSDKAdapters
 //
-//  Created by  Glispa GmbH on 15/06/16.
-//  Copyright © 2016  Glispa GmbH. All rights reserved.
+//  Created by Glispa GmbH on 15/06/16.
+//  Copyright © 2016 Glispa GmbH. All rights reserved.
 //
 
 import UIKit

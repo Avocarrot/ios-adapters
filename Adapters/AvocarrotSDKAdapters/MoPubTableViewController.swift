@@ -2,8 +2,8 @@
 //  MoPubTableViewController.swift
 //  AvocarrotSDKAdapters
 //
-//  Created by  Glispa GmbH on 15/06/16.
-//  Copyright © 2016  Glispa GmbH. All rights reserved.
+//  Created by Glispa GmbH on 15/06/16.
+//  Copyright © 2016 Glispa GmbH. All rights reserved.
 //
 
 import Foundation
@@ -42,21 +42,13 @@ class MoPubTableViewController: UITableViewController {
 	func loadSampleAds() {
 		for index in 1...10 {
 			sampleData += [SampleModel(title: "Sample title \(index)",
-                text: " sample description \(index)",
+                text: "sample description \(index)",
                 imageUrl: "https://lorempixel.com/160/160/people/\(index)/")]
 		}
 
 	}
 
-	override func didReceiveMemoryWarning() {
-		super.didReceiveMemoryWarning()
-		// Dispose of any resources that can be recreated.
-	}
-
 	// MARK: - Table view data source
-	override func numberOfSections(in tableView: UITableView) -> Int {
-		return 1
-	}
 
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return sampleData.count

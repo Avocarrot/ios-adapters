@@ -20,6 +20,8 @@ class MoPubInterstitialViewController: UIViewController, MPInterstitialAdControl
         mpInterstitial.loadAd()
     }
 
+    // MARK: - MPInterstitialAdControllerDelegate
+
     func interstitialDidLoadAd(_ interstitial: MPInterstitialAdController!) {
         interstitial.show(from: self)
     }

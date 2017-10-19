@@ -35,6 +35,8 @@ class AvocarrotAdMobCustomEventBanner: NSObject, GADCustomEventBanner {
         var size = AVOBannerViewSizeSmall
         if GADAdSizeEqualToSize(adSize, kGADAdSizeLeaderboard) {
             size = AVOBannerViewSizeLarge
+        } else if GADAdSizeEqualToSize(adSize, kGADAdSizeMediumRectangle) {
+            size = AVOBannerViewSizeMREC
         }
 
         guard let ad  = AvocarrotSDK.shared.loadBanner(with: size, adUnitId: adUnitId, success: { [weak self] (bannerAd) in

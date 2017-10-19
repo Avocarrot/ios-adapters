@@ -22,14 +22,14 @@ class MoPubBannerViewController: UIViewController, MPAdViewDelegate {
         mpBanner?.loadAd()
     }
 
+    // MARK: - MPAdViewDelegate
+
     func adViewDidLoadAd(_ view: MPAdView!) {
-        for subviewview in bannerView.subviews {
-            subviewview.removeFromSuperview()
+        for subview in bannerView.subviews {
+            subview.removeFromSuperview()
         }
 
         bannerView.addSubview(view)
-
-        print("MoPub returns ad!")
     }
 
     func viewControllerForPresentingModalView() -> UIViewController! {

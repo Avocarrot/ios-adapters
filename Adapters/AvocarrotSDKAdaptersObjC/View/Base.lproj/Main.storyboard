@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dO3-ek-Zwi">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Mex-yW-Hya">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="dO3-ek-Zwi" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="fik-ek-Hcg">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="zD4-7f-zLJ" kind="relationship" relationship="rootViewController" id="JHc-eD-Lqw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nYs-EY-ZNa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44" y="346"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bsO-gi-QI5">
+            <objects>
+                <viewController id="zD4-7f-zLJ" customClass="AVOViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ASb-YW-IIO"/>
+                        <viewControllerLayoutGuide type="bottom" id="8GQ-0v-vF4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dn3-eA-CAa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Hg-NF-5rs">
+                                <rect key="frame" x="59" y="303" width="256" height="60"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.4039215686" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="62V-9Z-ekf"/>
+                                    <constraint firstAttribute="width" constant="256" id="Xdd-kr-zKf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="MoPub Adapter">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="UIZ-0U-oSg" kind="show" id="64d-Fq-wPL">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avocarrot-logo" translatesAutoresizingMaskIntoConstraints="NO" id="qHF-qK-mad">
+                                <rect key="frame" x="10" y="32" width="355" height="74"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOr-M7-EwH">
+                                <rect key="frame" x="59" y="387" width="256" height="60"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.4039215686" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="HjF-tl-iBQ"/>
+                                    <constraint firstAttribute="width" constant="256" id="U8W-fJ-JVi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="GoogleMobileAds Adapter">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="mWQ-oT-M82" kind="show" id="wrv-eA-4ca">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qHF-qK-mad" firstAttribute="leading" secondItem="dn3-eA-CAa" secondAttribute="leading" constant="10" id="3NO-tL-zBJ"/>
+                            <constraint firstItem="6Hg-NF-5rs" firstAttribute="centerX" secondItem="dn3-eA-CAa" secondAttribute="centerX" id="Q21-I3-gLh"/>
+                            <constraint firstItem="6Hg-NF-5rs" firstAttribute="centerY" secondItem="dn3-eA-CAa" secondAttribute="centerY" id="RgS-1o-b3u"/>
+                            <constraint firstItem="rOr-M7-EwH" firstAttribute="top" secondItem="6Hg-NF-5rs" secondAttribute="bottom" constant="24" id="WWO-bD-dGd"/>
+                            <constraint firstItem="qHF-qK-mad" firstAttribute="top" secondItem="dn3-eA-CAa" secondAttribute="top" constant="32" id="YSb-Nh-X0J"/>
+                            <constraint firstAttribute="trailing" secondItem="qHF-qK-mad" secondAttribute="trailing" constant="10" id="jkb-W6-czs"/>
+                            <constraint firstItem="rOr-M7-EwH" firstAttribute="centerX" secondItem="dn3-eA-CAa" secondAttribute="centerX" id="vWc-NN-idC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="CjL-5o-13c"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PeG-iJ-RMP" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="786" y="346"/>
+        </scene>
+        <!--Native-->
+        <scene sceneID="8dG-cS-Skq">
+            <objects>
+                <tableViewController id="PiN-aL-HsH" customClass="AVOMoPubTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="87" sectionHeaderHeight="28" sectionFooterHeight="28" id="n6P-FL-Qbx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AVOSampleTableCell" rowHeight="87" id="d1v-ZS-yGA" customClass="AVOSampleTableCell">
+                                <rect key="frame" x="0.0" y="28" width="375" height="87"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="d1v-ZS-yGA" id="pD0-Zf-Us8">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="86.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGA-va-MaS">
+                                            <rect key="frame" x="99" y="3" width="268" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="Swy-zR-dKv"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="emR-Bb-id9">
+                                            <rect key="frame" x="8" y="3" width="80" height="80"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="80" id="gwX-pr-Orn"/>
+                                                <constraint firstAttribute="height" constant="80" id="kmX-Xs-gTb"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rtl-PG-1ce">
+                                            <rect key="frame" x="99" y="36.5" width="268" height="42"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="42" id="elP-Qd-7K9"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.94117647059999998" green="0.4039215686" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="emR-Bb-id9" firstAttribute="leading" secondItem="pD0-Zf-Us8" secondAttribute="leading" constant="8" id="AMe-HK-5Hj"/>
+                                        <constraint firstItem="Rtl-PG-1ce" firstAttribute="bottom" secondItem="pD0-Zf-Us8" secondAttribute="bottomMargin" id="FcQ-mo-6sG"/>
+                                        <constraint firstItem="emR-Bb-id9" firstAttribute="centerY" secondItem="pD0-Zf-Us8" secondAttribute="centerY" id="Q1E-rL-UZP"/>
+                                        <constraint firstItem="Rtl-PG-1ce" firstAttribute="leading" secondItem="emR-Bb-id9" secondAttribute="trailing" constant="11" id="RVC-oH-pks"/>
+                                        <constraint firstItem="hGA-va-MaS" firstAttribute="top" secondItem="pD0-Zf-Us8" secondAttribute="top" constant="3" id="TdB-ZJ-JbI"/>
+                                        <constraint firstItem="Rtl-PG-1ce" firstAttribute="trailing" secondItem="pD0-Zf-Us8" secondAttribute="trailingMargin" id="gi8-R0-1ay"/>
+                                        <constraint firstItem="hGA-va-MaS" firstAttribute="leading" secondItem="emR-Bb-id9" secondAttribute="trailing" constant="11" id="kHi-C4-H4y"/>
+                                        <constraint firstAttribute="trailing" secondItem="hGA-va-MaS" secondAttribute="trailing" constant="8" id="rVF-kA-ypo"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="sampleImageView" destination="emR-Bb-id9" id="heN-cI-nGs"/>
+                                    <outlet property="sampleTextLabel" destination="Rtl-PG-1ce" id="7LU-5i-FGL"/>
+                                    <outlet property="sampleTitleLabel" destination="hGA-va-MaS" id="0SH-xa-4zd"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="PiN-aL-HsH" id="vij-Rj-BOe"/>
+                            <outlet property="delegate" destination="PiN-aL-HsH" id="Gj2-E7-AHy"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Native" id="S9q-9V-Nko"/>
+                    <navigationItem key="navigationItem" id="jpV-nZ-vVE"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ob-Ay-IgR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3070" y="-346"/>
+        </scene>
+        <!--Interstitial-->
+        <scene sceneID="TAS-GU-u2d">
+            <objects>
+                <viewController id="iFw-ZC-XGG" customClass="AVOGoogleMobileAdsInterstitialViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7e7-KK-n8E"/>
+                        <viewControllerLayoutGuide type="bottom" id="pK9-S9-J26"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W2z-T8-8A4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.85211267609999997" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Interstitial" id="alB-v1-oi0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IiP-7L-a7x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="785" y="1972"/>
+        </scene>
+        <!--Interstitial-->
+        <scene sceneID="wOR-Gn-086">
+            <objects>
+                <viewController id="vva-zP-boV" customClass="AVOMoPubInterstitialViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8no-fC-ZF6"/>
+                        <viewControllerLayoutGuide type="bottom" id="I4g-BQ-l38"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="peQ-T6-mLr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.85211267609999997" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Interstitial" id="Drr-At-baB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tHp-7t-nx8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3071" y="346"/>
+        </scene>
+        <!--Banner-->
+        <scene sceneID="sKL-o1-lc1">
+            <objects>
+                <viewController id="lFs-Z7-IAM" customClass="AVOGoogleMobileAdsBannerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OMO-Dq-YZB"/>
+                        <viewControllerLayoutGuide type="bottom" id="6f1-WU-YpG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lgv-UX-dWR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hrT-Wk-40W" customClass="GADBannerView">
+                                <rect key="frame" x="27" y="70" width="320" height="50"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="TPa-sM-Cje"/>
+                                    <constraint firstAttribute="width" constant="320" id="mdz-4G-7ns"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.85211267609999997" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hrT-Wk-40W" firstAttribute="centerX" secondItem="lgv-UX-dWR" secondAttribute="centerX" id="dsN-lf-dph"/>
+                            <constraint firstItem="hrT-Wk-40W" firstAttribute="top" secondItem="OMO-Dq-YZB" secondAttribute="bottom" constant="50" id="kRN-LW-D5j"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Banner" id="FVF-nG-B4S"/>
+                    <connections>
+                        <outlet property="bannerView" destination="hrT-Wk-40W" id="Riu-UH-LNP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qQm-to-iPN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-226" y="1973"/>
+        </scene>
+        <!--Banner-->
+        <scene sceneID="ege-qg-ZAx">
+            <objects>
+                <viewController id="Sxt-Gh-Usd" customClass="AVOMoPubBannerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eKc-Ex-IoX"/>
+                        <viewControllerLayoutGuide type="bottom" id="u5h-OO-fPS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="o6h-hz-wUT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="38E-CB-wfv">
+                                <rect key="frame" x="27" y="70" width="320" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="DTb-0W-fmv"/>
+                                    <constraint firstAttribute="height" constant="50" id="GHH-ri-kOL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.85211267609999997" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="38E-CB-wfv" firstAttribute="top" secondItem="eKc-Ex-IoX" secondAttribute="bottom" constant="50" id="Vis-c0-k3T"/>
+                            <constraint firstItem="38E-CB-wfv" firstAttribute="centerX" secondItem="o6h-hz-wUT" secondAttribute="centerX" id="fzl-Nb-lh3"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Banner" id="e1x-5Y-FIz"/>
+                    <connections>
+                        <outlet property="bannerView" destination="38E-CB-wfv" id="7Gh-vu-gao"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="phK-sx-W4x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3070" y="1039"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ipk-W6-DuY">
+            <objects>
+                <tabBarController id="mWQ-oT-M82" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" id="0lb-Zc-xRY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.85211267609999997" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.94117647059999998" green="0.4039215686" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.94117647059999998" green="0.4039215686" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBar>
+                    <connections>
+                        <segue destination="lFs-Z7-IAM" kind="relationship" relationship="viewControllers" id="dGa-sl-2Zg"/>
+                        <segue destination="iFw-ZC-XGG" kind="relationship" relationship="viewControllers" id="Axh-3t-l7e"/>
+                        <segue destination="v0H-x3-B5Y" kind="relationship" relationship="viewControllers" id="vQf-SP-K9Y"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bd8-tw-2cJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="785" y="1136"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Ddd-R4-9Mh">
+            <objects>
+                <tabBarController id="UIZ-0U-oSg" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" id="ONq-MT-cPJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.85211267609999997" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.94117647059999998" green="0.4039215686" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.94117647059999998" green="0.4039215686" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Sxt-Gh-Usd" kind="relationship" relationship="viewControllers" id="vnN-e5-aGW"/>
+                        <segue destination="vva-zP-boV" kind="relationship" relationship="viewControllers" id="yqz-g4-fod"/>
+                        <segue destination="PiN-aL-HsH" kind="relationship" relationship="viewControllers" id="aoq-Rb-dng"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f5o-dM-dKb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1846" y="346"/>
+        </scene>
+        <!--Native-->
+        <scene sceneID="6rV-qi-8OP">
+            <objects>
+                <viewController id="v0H-x3-B5Y" customClass="AVOGoogleMobileAdsNativeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NYT-wU-1rS"/>
+                        <viewControllerLayoutGuide type="bottom" id="XwV-bd-J1h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xg6-xe-JM4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nPN-Qp-HQ0" customClass="GADNativeExpressAdView">
+                                <rect key="frame" x="27.5" y="318" width="320" height="300"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="66u-mC-AHl"/>
+                                    <constraint firstAttribute="height" constant="300" id="pzw-dV-MQ9"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.85211267609999997" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XwV-bd-J1h" firstAttribute="top" secondItem="nPN-Qp-HQ0" secondAttribute="bottom" id="QkH-G3-pbl"/>
+                            <constraint firstItem="nPN-Qp-HQ0" firstAttribute="centerX" secondItem="xg6-xe-JM4" secondAttribute="centerX" id="Xou-cu-yqC"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Native" id="wed-yA-lzk"/>
+                    <connections>
+                        <outlet property="nativeExpressAdView" destination="nPN-Qp-HQ0" id="eRR-Pm-ylx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OVZ-vc-FmJ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1761" y="1972"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="avocarrot-logo" width="360" height="74"/>
+    </resources>
+</document>

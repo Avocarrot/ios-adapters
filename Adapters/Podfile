@@ -5,12 +5,19 @@ use_frameworks!
 
 workspace 'AvocarrotSDKAdapters'
 target 'AvocarrotSDKAdapters' do
-    pod 'avocarrot-ios-sdk/NativeAssets', '~> 4.6.0'
-    pod 'avocarrot-ios-sdk/Interstitial', '~> 4.6.0'
-    pod 'avocarrot-ios-sdk/Banner', '~> 4.6.0'
-    pod 'mopub-ios-sdk', '~> 4.13'
-    pod 'Google-Mobile-Ads-SDK', '~> 7.19'
+    pod 'avocarrot-ios-sdk/NativeAssets', '~> 4.7'
+    pod 'avocarrot-ios-sdk/Interstitial', '~> 4.7'
+    pod 'avocarrot-ios-sdk/Banner', '~> 4.7'
+    pod 'mopub-ios-sdk', '~> 4.15'
+    pod 'Google-Mobile-Ads-SDK', '~> 7.22'
     pod 'SDWebImage'
-    pod 'Fabric'
-    pod 'Crashlytics'
+end
+
+target 'AvocarrotSDKAdaptersObjC' do
+    pod 'avocarrot-ios-sdk/NativeAssets', '~> 4.7'
+    pod 'avocarrot-ios-sdk/Interstitial', '~> 4.7'
+    pod 'avocarrot-ios-sdk/Banner', '~> 4.7'
+    pod 'mopub-ios-sdk', '~> 4.15'
+    pod 'Google-Mobile-Ads-SDK', '~> 7.22'
+    pod 'SDWebImage'
 end

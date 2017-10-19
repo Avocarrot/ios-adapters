@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3BD893BFD83CD8BE04B96F7C /* Pods_AvocarrotSDKAdapters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7140A4308180A6AE3485BA7D /* Pods_AvocarrotSDKAdapters.framework */; };
+		6BAE604A66515E0D2CCBE92E /* Pods_AvocarrotSDKAdaptersObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F72439FC431A8AC3FC8BEE2 /* Pods_AvocarrotSDKAdaptersObjC.framework */; };
 		BF057D2D1E701CDA00BBB49A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF057D2C1E701CDA00BBB49A /* AppDelegate.swift */; };
 		BF057D2F1E701CDA00BBB49A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF057D2E1E701CDA00BBB49A /* ViewController.swift */; };
 		BF057D321E701CDA00BBB49A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF057D301E701CDA00BBB49A /* Main.storyboard */; };
@@ -18,26 +19,53 @@
 		BF057D461E70349200BBB49A /* SampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF057D411E70349200BBB49A /* SampleModel.swift */; };
 		BF057D471E70349200BBB49A /* NativeAdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF057D421E70349200BBB49A /* NativeAdCell.swift */; };
 		BF057D481E70349200BBB49A /* NativeAdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF057D431E70349200BBB49A /* NativeAdCell.xib */; };
-		BF2D336F1EE6F57D000FE1FA /* AvocarrotAdMobCustomEventBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2D336E1EE6F57D000FE1FA /* AvocarrotAdMobCustomEventBanner.swift */; };
-		BF2D33761EE6FD42000FE1FA /* AvocarrotAdMobCustomEventInterstitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2D33751EE6FD42000FE1FA /* AvocarrotAdMobCustomEventInterstitial.swift */; };
 		BF2D33781EE70542000FE1FA /* GoogleMobileAdsBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2D33771EE70542000FE1FA /* GoogleMobileAdsBannerViewController.swift */; };
 		BF2D337A1EE705E8000FE1FA /* GoogleMobileAdsInterstitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2D33791EE705E8000FE1FA /* GoogleMobileAdsInterstitialViewController.swift */; };
-		BF514F401F0A7C5F00950B68 /* AvocarrotMoPubInterstitialCustomEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF514F3F1F0A7C5F00950B68 /* AvocarrotMoPubInterstitialCustomEvent.swift */; };
-		BF514F421F0A8DFA00950B68 /* AvocarrotMoPubBannerCustomEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF514F411F0A8DFA00950B68 /* AvocarrotMoPubBannerCustomEvent.swift */; };
 		BF514F441F0AA47700950B68 /* MoPubBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF514F431F0AA47700950B68 /* MoPubBannerViewController.swift */; };
 		BF514F461F0AA4A300950B68 /* MoPubInterstitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF514F451F0AA4A300950B68 /* MoPubInterstitialViewController.swift */; };
-		BF7FC9A41ECC9CCD0018BE4A /* AvocarrotAdMobCustomEventNativeAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7FC99F1ECC9CCD0018BE4A /* AvocarrotAdMobCustomEventNativeAd.swift */; };
-		BF7FC9A51ECC9CCD0018BE4A /* AvocarrotAdMobMediatedNativeContentAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7FC9A01ECC9CCD0018BE4A /* AvocarrotAdMobMediatedNativeContentAd.swift */; };
-		BF7FC9A61ECC9CCD0018BE4A /* AvocarrotMoPubCustomAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7FC9A21ECC9CCD0018BE4A /* AvocarrotMoPubCustomAdapter.swift */; };
-		BF7FC9A71ECC9CCD0018BE4A /* AvocarrotMoPubNativeCustomEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7FC9A31ECC9CCD0018BE4A /* AvocarrotMoPubNativeCustomEvent.swift */; };
+		BF8D21271F852096001F0DBD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8D21261F852096001F0DBD /* AppDelegate.m */; };
+		BF8D212D1F852096001F0DBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8D212B1F852096001F0DBD /* Main.storyboard */; };
+		BF8D212F1F852097001F0DBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8D212E1F852097001F0DBD /* Assets.xcassets */; };
+		BF8D21321F852097001F0DBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8D21301F852097001F0DBD /* LaunchScreen.storyboard */; };
+		BF8D21351F852097001F0DBD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8D21341F852097001F0DBD /* main.m */; };
+		BF8D21461F852142001F0DBD /* AvocarrotAdMobCustomEventInterstitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8D213D1F852142001F0DBD /* AvocarrotAdMobCustomEventInterstitial.swift */; };
+		BF8D21471F852142001F0DBD /* AvocarrotAdMobCustomEventInterstitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8D213D1F852142001F0DBD /* AvocarrotAdMobCustomEventInterstitial.swift */; };
+		BF8D21481F852142001F0DBD /* AvocarrotAdMobMediatedNativeContentAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8D213E1F852142001F0DBD /* AvocarrotAdMobMediatedNativeContentAd.swift */; };
+		BF8D21491F852142001F0DBD /* AvocarrotAdMobMediatedNativeContentAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8D213E1F852142001F0DBD /* AvocarrotAdMobMediatedNativeContentAd.swift */; };
+		BF8D214A1F852142001F0DBD /* AvocarrotAdMobCustomEventBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8D213F1F852142001F0DBD /* AvocarrotAdMobCustomEventBanner.swift */; };
+		BF8D214B1F852142001F0DBD /* AvocarrotAdMobCustomEventBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8D213F1F852142001F0DBD /* AvocarrotAdMobCustomEventBanner.swift */; };
+		BF8D214C1F852142001F0DBD /* AvocarrotAdMobCustomEventNativeAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8D21401F852142001F0DBD /* AvocarrotAdMobCustomEventNativeAd.swift */; };
+		BF8D214D1F852142001F0DBD /* AvocarrotAdMobCustomEventNativeAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8D21401F852142001F0DBD /* AvocarrotAdMobCustomEventNativeAd.swift */; };
+		BF8D214E1F852142001F0DBD /* AvocarrotMoPubBannerCustomEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8D21421F852142001F0DBD /* AvocarrotMoPubBannerCustomEvent.swift */; };
+		BF8D214F1F852142001F0DBD /* AvocarrotMoPubBannerCustomEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8D21421F852142001F0DBD /* AvocarrotMoPubBannerCustomEvent.swift */; };
+		BF8D21501F852142001F0DBD /* AvocarrotMoPubCustomAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8D21431F852142001F0DBD /* AvocarrotMoPubCustomAdapter.swift */; };
+		BF8D21511F852142001F0DBD /* AvocarrotMoPubCustomAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8D21431F852142001F0DBD /* AvocarrotMoPubCustomAdapter.swift */; };
+		BF8D21521F852142001F0DBD /* AvocarrotMoPubInterstitialCustomEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8D21441F852142001F0DBD /* AvocarrotMoPubInterstitialCustomEvent.swift */; };
+		BF8D21531F852142001F0DBD /* AvocarrotMoPubInterstitialCustomEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8D21441F852142001F0DBD /* AvocarrotMoPubInterstitialCustomEvent.swift */; };
+		BF8D21541F852142001F0DBD /* AvocarrotMoPubNativeCustomEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8D21451F852142001F0DBD /* AvocarrotMoPubNativeCustomEvent.swift */; };
+		BF8D21551F852142001F0DBD /* AvocarrotMoPubNativeCustomEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8D21451F852142001F0DBD /* AvocarrotMoPubNativeCustomEvent.swift */; };
+		BF8D21591F85236B001F0DBD /* AVOSampleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8D21581F85236B001F0DBD /* AVOSampleModel.m */; };
+		BF8D215C1F85262F001F0DBD /* AVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8D215B1F85262F001F0DBD /* AVOViewController.m */; };
+		BF8D215F1F85284F001F0DBD /* AVOMoPubTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8D215E1F85284F001F0DBD /* AVOMoPubTableViewController.m */; };
 		BFC8DE891ECB5F9600387714 /* GoogleMobileAdsNativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC8DE881ECB5F9600387714 /* GoogleMobileAdsNativeViewController.swift */; };
+		BFE031F61F853085006046D1 /* AVOMoPubBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE031F51F853085006046D1 /* AVOMoPubBannerViewController.m */; };
+		BFE031F91F8530C4006046D1 /* AVOMoPubInterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE031F81F8530C4006046D1 /* AVOMoPubInterstitialViewController.m */; };
+		BFE031FC1F85348E006046D1 /* AVOSampleTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE031FB1F85348E006046D1 /* AVOSampleTableCell.m */; };
+		BFE031FD1F8539E1006046D1 /* AVONativeAdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFE906861F852CEB00CE1E2F /* AVONativeAdCell.xib */; };
+		BFE9068A1F852D2400CE1E2F /* AVONativeAdCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE906891F852D2400CE1E2F /* AVONativeAdCell.m */; };
+		BFF983BC1F8D18FB007635B6 /* AVOGoogleMobileAdsNativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF983BB1F8D18FB007635B6 /* AVOGoogleMobileAdsNativeViewController.m */; };
+		BFF983BF1F8D1B8B007635B6 /* AVOGoogleMobileAdsBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF983BE1F8D1B8B007635B6 /* AVOGoogleMobileAdsBannerViewController.m */; };
+		BFF983C21F8D1CAB007635B6 /* AVOGoogleMobileAdsInterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF983C11F8D1CAB007635B6 /* AVOGoogleMobileAdsInterstitialViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B6A460764E88ECCC2EFFC42 /* Pods-AvocarrotSDKAdaptersObjC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvocarrotSDKAdaptersObjC.release.xcconfig"; path = "Pods/Target Support Files/Pods-AvocarrotSDKAdaptersObjC/Pods-AvocarrotSDKAdaptersObjC.release.xcconfig"; sourceTree = "<group>"; };
+		4F72439FC431A8AC3FC8BEE2 /* Pods_AvocarrotSDKAdaptersObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AvocarrotSDKAdaptersObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		539592548BA3E5E1AB464715 /* Pods-AvocarrotSDKAdaptersObjC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvocarrotSDKAdaptersObjC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AvocarrotSDKAdaptersObjC/Pods-AvocarrotSDKAdaptersObjC.debug.xcconfig"; sourceTree = "<group>"; };
 		7140A4308180A6AE3485BA7D /* Pods_AvocarrotSDKAdapters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AvocarrotSDKAdapters.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72C7CD694CD6C68AE7D6D690 /* Pods-AvocarrotSDKAdapters.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvocarrotSDKAdapters.release.xcconfig"; path = "Pods/Target Support Files/Pods-AvocarrotSDKAdapters/Pods-AvocarrotSDKAdapters.release.xcconfig"; sourceTree = "<group>"; };
 		BF057D291E701CDA00BBB49A /* AvocarrotSDKAdapters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvocarrotSDKAdapters.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF057D2C1E701CDA00BBB49A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = AvocarrotSDKAdapters/AppDelegate.swift; sourceTree = "<group>"; };
+		BF057D2C1E701CDA00BBB49A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF057D2E1E701CDA00BBB49A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BF057D311E701CDA00BBB49A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF057D331E701CDA00BBB49A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,19 +76,48 @@
 		BF057D411E70349200BBB49A /* SampleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleModel.swift; sourceTree = "<group>"; };
 		BF057D421E70349200BBB49A /* NativeAdCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeAdCell.swift; sourceTree = "<group>"; };
 		BF057D431E70349200BBB49A /* NativeAdCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeAdCell.xib; sourceTree = "<group>"; };
-		BF2D336E1EE6F57D000FE1FA /* AvocarrotAdMobCustomEventBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvocarrotAdMobCustomEventBanner.swift; sourceTree = "<group>"; };
-		BF2D33751EE6FD42000FE1FA /* AvocarrotAdMobCustomEventInterstitial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvocarrotAdMobCustomEventInterstitial.swift; sourceTree = "<group>"; };
 		BF2D33771EE70542000FE1FA /* GoogleMobileAdsBannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMobileAdsBannerViewController.swift; sourceTree = "<group>"; };
 		BF2D33791EE705E8000FE1FA /* GoogleMobileAdsInterstitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMobileAdsInterstitialViewController.swift; sourceTree = "<group>"; };
-		BF514F3F1F0A7C5F00950B68 /* AvocarrotMoPubInterstitialCustomEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvocarrotMoPubInterstitialCustomEvent.swift; sourceTree = "<group>"; };
-		BF514F411F0A8DFA00950B68 /* AvocarrotMoPubBannerCustomEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvocarrotMoPubBannerCustomEvent.swift; sourceTree = "<group>"; };
 		BF514F431F0AA47700950B68 /* MoPubBannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoPubBannerViewController.swift; sourceTree = "<group>"; };
 		BF514F451F0AA4A300950B68 /* MoPubInterstitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoPubInterstitialViewController.swift; sourceTree = "<group>"; };
-		BF7FC99F1ECC9CCD0018BE4A /* AvocarrotAdMobCustomEventNativeAd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvocarrotAdMobCustomEventNativeAd.swift; sourceTree = "<group>"; };
-		BF7FC9A01ECC9CCD0018BE4A /* AvocarrotAdMobMediatedNativeContentAd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvocarrotAdMobMediatedNativeContentAd.swift; sourceTree = "<group>"; };
-		BF7FC9A21ECC9CCD0018BE4A /* AvocarrotMoPubCustomAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvocarrotMoPubCustomAdapter.swift; sourceTree = "<group>"; };
-		BF7FC9A31ECC9CCD0018BE4A /* AvocarrotMoPubNativeCustomEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvocarrotMoPubNativeCustomEvent.swift; sourceTree = "<group>"; };
+		BF8D21231F852096001F0DBD /* AvocarrotSDKAdaptersObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvocarrotSDKAdaptersObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF8D21251F852096001F0DBD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BF8D21261F852096001F0DBD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BF8D212C1F852096001F0DBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF8D212E1F852097001F0DBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF8D21311F852097001F0DBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF8D21331F852097001F0DBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF8D21341F852097001F0DBD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF8D213D1F852142001F0DBD /* AvocarrotAdMobCustomEventInterstitial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvocarrotAdMobCustomEventInterstitial.swift; sourceTree = "<group>"; };
+		BF8D213E1F852142001F0DBD /* AvocarrotAdMobMediatedNativeContentAd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvocarrotAdMobMediatedNativeContentAd.swift; sourceTree = "<group>"; };
+		BF8D213F1F852142001F0DBD /* AvocarrotAdMobCustomEventBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvocarrotAdMobCustomEventBanner.swift; sourceTree = "<group>"; };
+		BF8D21401F852142001F0DBD /* AvocarrotAdMobCustomEventNativeAd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvocarrotAdMobCustomEventNativeAd.swift; sourceTree = "<group>"; };
+		BF8D21421F852142001F0DBD /* AvocarrotMoPubBannerCustomEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvocarrotMoPubBannerCustomEvent.swift; sourceTree = "<group>"; };
+		BF8D21431F852142001F0DBD /* AvocarrotMoPubCustomAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvocarrotMoPubCustomAdapter.swift; sourceTree = "<group>"; };
+		BF8D21441F852142001F0DBD /* AvocarrotMoPubInterstitialCustomEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvocarrotMoPubInterstitialCustomEvent.swift; sourceTree = "<group>"; };
+		BF8D21451F852142001F0DBD /* AvocarrotMoPubNativeCustomEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvocarrotMoPubNativeCustomEvent.swift; sourceTree = "<group>"; };
+		BF8D21571F85236B001F0DBD /* AVOSampleModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVOSampleModel.h; sourceTree = "<group>"; };
+		BF8D21581F85236B001F0DBD /* AVOSampleModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVOSampleModel.m; sourceTree = "<group>"; };
+		BF8D215A1F85262F001F0DBD /* AVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVOViewController.h; sourceTree = "<group>"; };
+		BF8D215B1F85262F001F0DBD /* AVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVOViewController.m; sourceTree = "<group>"; };
+		BF8D215D1F85284F001F0DBD /* AVOMoPubTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVOMoPubTableViewController.h; sourceTree = "<group>"; };
+		BF8D215E1F85284F001F0DBD /* AVOMoPubTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVOMoPubTableViewController.m; sourceTree = "<group>"; };
 		BFC8DE881ECB5F9600387714 /* GoogleMobileAdsNativeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleMobileAdsNativeViewController.swift; sourceTree = "<group>"; };
+		BFE031F41F853085006046D1 /* AVOMoPubBannerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVOMoPubBannerViewController.h; sourceTree = "<group>"; };
+		BFE031F51F853085006046D1 /* AVOMoPubBannerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVOMoPubBannerViewController.m; sourceTree = "<group>"; };
+		BFE031F71F8530C4006046D1 /* AVOMoPubInterstitialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVOMoPubInterstitialViewController.h; sourceTree = "<group>"; };
+		BFE031F81F8530C4006046D1 /* AVOMoPubInterstitialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVOMoPubInterstitialViewController.m; sourceTree = "<group>"; };
+		BFE031FA1F85348E006046D1 /* AVOSampleTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVOSampleTableCell.h; sourceTree = "<group>"; };
+		BFE031FB1F85348E006046D1 /* AVOSampleTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVOSampleTableCell.m; sourceTree = "<group>"; };
+		BFE906871F852CEB00CE1E2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AVONativeAdCell.xib; sourceTree = "<group>"; };
+		BFE906881F852D2400CE1E2F /* AVONativeAdCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVONativeAdCell.h; sourceTree = "<group>"; };
+		BFE906891F852D2400CE1E2F /* AVONativeAdCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVONativeAdCell.m; sourceTree = "<group>"; };
+		BFF983BA1F8D18FB007635B6 /* AVOGoogleMobileAdsNativeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVOGoogleMobileAdsNativeViewController.h; sourceTree = "<group>"; };
+		BFF983BB1F8D18FB007635B6 /* AVOGoogleMobileAdsNativeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVOGoogleMobileAdsNativeViewController.m; sourceTree = "<group>"; };
+		BFF983BD1F8D1B8B007635B6 /* AVOGoogleMobileAdsBannerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVOGoogleMobileAdsBannerViewController.h; sourceTree = "<group>"; };
+		BFF983BE1F8D1B8B007635B6 /* AVOGoogleMobileAdsBannerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVOGoogleMobileAdsBannerViewController.m; sourceTree = "<group>"; };
+		BFF983C01F8D1CAB007635B6 /* AVOGoogleMobileAdsInterstitialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVOGoogleMobileAdsInterstitialViewController.h; sourceTree = "<group>"; };
+		BFF983C11F8D1CAB007635B6 /* AVOGoogleMobileAdsInterstitialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVOGoogleMobileAdsInterstitialViewController.m; sourceTree = "<group>"; };
 		FCE372ED42B06BE083611026 /* Pods-AvocarrotSDKAdapters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvocarrotSDKAdapters.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AvocarrotSDKAdapters/Pods-AvocarrotSDKAdapters.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,14 +130,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BF8D21201F852096001F0DBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BAE604A66515E0D2CCBE92E /* Pods_AvocarrotSDKAdaptersObjC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		BF057D201E701CDA00BBB49A = {
 			isa = PBXGroup;
 			children = (
+				BF8D213C1F852142001F0DBD /* GoogleMobileAds */,
+				BF8D21411F852142001F0DBD /* MoPub */,
 				BF057D2B1E701CDA00BBB49A /* AvocarrotSDKAdapters */,
-				BF057D2C1E701CDA00BBB49A /* AppDelegate.swift */,
+				BF8D21241F852096001F0DBD /* AvocarrotSDKAdaptersObjC */,
 				BF057D2A1E701CDA00BBB49A /* Products */,
 				C7CEF211954ADA220673158B /* Pods */,
 				F4804C65611193944CE05E2E /* Frameworks */,
@@ -91,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				BF057D291E701CDA00BBB49A /* AvocarrotSDKAdapters.app */,
+				BF8D21231F852096001F0DBD /* AvocarrotSDKAdaptersObjC.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,36 +166,92 @@
 		BF057D2B1E701CDA00BBB49A /* AvocarrotSDKAdapters */ = {
 			isa = PBXGroup;
 			children = (
-				BF7FC99E1ECC9CCD0018BE4A /* GoogleMobileAds */,
-				BF7FC9A11ECC9CCD0018BE4A /* MoPub */,
+				BF057D2C1E701CDA00BBB49A /* AppDelegate.swift */,
+				BFC8DE821ECB55C600387714 /* View */,
 				BFC8DE841ECB55E000387714 /* Controller */,
 				BFC8DE831ECB55D800387714 /* Data */,
-				BFC8DE821ECB55C600387714 /* View */,
 				BFC8DE851ECB55F800387714 /* Resources */,
 			);
 			path = AvocarrotSDKAdapters;
 			sourceTree = "<group>";
 		};
-		BF7FC99E1ECC9CCD0018BE4A /* GoogleMobileAds */ = {
+		BF8D21241F852096001F0DBD /* AvocarrotSDKAdaptersObjC */ = {
 			isa = PBXGroup;
 			children = (
-				BF7FC99F1ECC9CCD0018BE4A /* AvocarrotAdMobCustomEventNativeAd.swift */,
-				BF7FC9A01ECC9CCD0018BE4A /* AvocarrotAdMobMediatedNativeContentAd.swift */,
-				BF2D336E1EE6F57D000FE1FA /* AvocarrotAdMobCustomEventBanner.swift */,
-				BF2D33751EE6FD42000FE1FA /* AvocarrotAdMobCustomEventInterstitial.swift */,
+				BF8D21251F852096001F0DBD /* AppDelegate.h */,
+				BF8D21261F852096001F0DBD /* AppDelegate.m */,
+				BF8D213B1F8520BC001F0DBD /* View */,
+				BF8D21391F8520AC001F0DBD /* Controller */,
+				BF8D213A1F8520B5001F0DBD /* Data */,
+				BF8D21561F8521BD001F0DBD /* Resources */,
+			);
+			path = AvocarrotSDKAdaptersObjC;
+			sourceTree = "<group>";
+		};
+		BF8D21391F8520AC001F0DBD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BF8D215A1F85262F001F0DBD /* AVOViewController.h */,
+				BF8D215B1F85262F001F0DBD /* AVOViewController.m */,
+				BFE031FE1F853ACB006046D1 /* MoPub */,
+				BFF983B91F8D18C1007635B6 /* GoogleMobileAds */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BF8D213A1F8520B5001F0DBD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BF8D21571F85236B001F0DBD /* AVOSampleModel.h */,
+				BF8D21581F85236B001F0DBD /* AVOSampleModel.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		BF8D213B1F8520BC001F0DBD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF8D212B1F852096001F0DBD /* Main.storyboard */,
+				BFE906881F852D2400CE1E2F /* AVONativeAdCell.h */,
+				BFE906891F852D2400CE1E2F /* AVONativeAdCell.m */,
+				BFE906861F852CEB00CE1E2F /* AVONativeAdCell.xib */,
+				BFE031FA1F85348E006046D1 /* AVOSampleTableCell.h */,
+				BFE031FB1F85348E006046D1 /* AVOSampleTableCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF8D213C1F852142001F0DBD /* GoogleMobileAds */ = {
+			isa = PBXGroup;
+			children = (
+				BF8D213D1F852142001F0DBD /* AvocarrotAdMobCustomEventInterstitial.swift */,
+				BF8D213E1F852142001F0DBD /* AvocarrotAdMobMediatedNativeContentAd.swift */,
+				BF8D213F1F852142001F0DBD /* AvocarrotAdMobCustomEventBanner.swift */,
+				BF8D21401F852142001F0DBD /* AvocarrotAdMobCustomEventNativeAd.swift */,
 			);
 			path = GoogleMobileAds;
 			sourceTree = "<group>";
 		};
-		BF7FC9A11ECC9CCD0018BE4A /* MoPub */ = {
+		BF8D21411F852142001F0DBD /* MoPub */ = {
 			isa = PBXGroup;
 			children = (
-				BF7FC9A21ECC9CCD0018BE4A /* AvocarrotMoPubCustomAdapter.swift */,
-				BF7FC9A31ECC9CCD0018BE4A /* AvocarrotMoPubNativeCustomEvent.swift */,
-				BF514F3F1F0A7C5F00950B68 /* AvocarrotMoPubInterstitialCustomEvent.swift */,
-				BF514F411F0A8DFA00950B68 /* AvocarrotMoPubBannerCustomEvent.swift */,
+				BF8D21421F852142001F0DBD /* AvocarrotMoPubBannerCustomEvent.swift */,
+				BF8D21431F852142001F0DBD /* AvocarrotMoPubCustomAdapter.swift */,
+				BF8D21441F852142001F0DBD /* AvocarrotMoPubInterstitialCustomEvent.swift */,
+				BF8D21451F852142001F0DBD /* AvocarrotMoPubNativeCustomEvent.swift */,
 			);
 			path = MoPub;
+			sourceTree = "<group>";
+		};
+		BF8D21561F8521BD001F0DBD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF8D21341F852097001F0DBD /* main.m */,
+				BF8D212E1F852097001F0DBD /* Assets.xcassets */,
+				BF8D21301F852097001F0DBD /* LaunchScreen.storyboard */,
+				BF8D21331F852097001F0DBD /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		BFC8DE821ECB55C600387714 /* View */ = {
@@ -173,11 +297,39 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		BFE031FE1F853ACB006046D1 /* MoPub */ = {
+			isa = PBXGroup;
+			children = (
+				BF8D215D1F85284F001F0DBD /* AVOMoPubTableViewController.h */,
+				BF8D215E1F85284F001F0DBD /* AVOMoPubTableViewController.m */,
+				BFE031F41F853085006046D1 /* AVOMoPubBannerViewController.h */,
+				BFE031F51F853085006046D1 /* AVOMoPubBannerViewController.m */,
+				BFE031F71F8530C4006046D1 /* AVOMoPubInterstitialViewController.h */,
+				BFE031F81F8530C4006046D1 /* AVOMoPubInterstitialViewController.m */,
+			);
+			path = MoPub;
+			sourceTree = "<group>";
+		};
+		BFF983B91F8D18C1007635B6 /* GoogleMobileAds */ = {
+			isa = PBXGroup;
+			children = (
+				BFF983BA1F8D18FB007635B6 /* AVOGoogleMobileAdsNativeViewController.h */,
+				BFF983BB1F8D18FB007635B6 /* AVOGoogleMobileAdsNativeViewController.m */,
+				BFF983BD1F8D1B8B007635B6 /* AVOGoogleMobileAdsBannerViewController.h */,
+				BFF983BE1F8D1B8B007635B6 /* AVOGoogleMobileAdsBannerViewController.m */,
+				BFF983C01F8D1CAB007635B6 /* AVOGoogleMobileAdsInterstitialViewController.h */,
+				BFF983C11F8D1CAB007635B6 /* AVOGoogleMobileAdsInterstitialViewController.m */,
+			);
+			path = GoogleMobileAds;
+			sourceTree = "<group>";
+		};
 		C7CEF211954ADA220673158B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				FCE372ED42B06BE083611026 /* Pods-AvocarrotSDKAdapters.debug.xcconfig */,
 				72C7CD694CD6C68AE7D6D690 /* Pods-AvocarrotSDKAdapters.release.xcconfig */,
+				539592548BA3E5E1AB464715 /* Pods-AvocarrotSDKAdaptersObjC.debug.xcconfig */,
+				0B6A460764E88ECCC2EFFC42 /* Pods-AvocarrotSDKAdaptersObjC.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -186,6 +338,7 @@
 			isa = PBXGroup;
 			children = (
 				7140A4308180A6AE3485BA7D /* Pods_AvocarrotSDKAdapters.framework */,
+				4F72439FC431A8AC3FC8BEE2 /* Pods_AvocarrotSDKAdaptersObjC.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -214,6 +367,26 @@
 			productReference = BF057D291E701CDA00BBB49A /* AvocarrotSDKAdapters.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BF8D21221F852096001F0DBD /* AvocarrotSDKAdaptersObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF8D21381F852097001F0DBD /* Build configuration list for PBXNativeTarget "AvocarrotSDKAdaptersObjC" */;
+			buildPhases = (
+				C43CFB790AC738B8FE18D5DC /* [CP] Check Pods Manifest.lock */,
+				BF8D211F1F852096001F0DBD /* Sources */,
+				BF8D21201F852096001F0DBD /* Frameworks */,
+				BF8D21211F852096001F0DBD /* Resources */,
+				57303C06A0A274142D575D40 /* [CP] Embed Pods Frameworks */,
+				6727CC2025BE5911CB82B9E3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AvocarrotSDKAdaptersObjC;
+			productName = AvocarrotSDKAdaptersObjC;
+			productReference = BF8D21231F852096001F0DBD /* AvocarrotSDKAdaptersObjC.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -226,6 +399,11 @@
 				TargetAttributes = {
 					BF057D281E701CDA00BBB49A = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7C7H88B9P9;
+						ProvisioningStyle = Manual;
+					};
+					BF8D21221F852096001F0DBD = {
+						CreatedOnToolsVersion = 9.1;
 						DevelopmentTeam = 7C7H88B9P9;
 						ProvisioningStyle = Manual;
 					};
@@ -245,6 +423,7 @@
 			projectRoot = "";
 			targets = (
 				BF057D281E701CDA00BBB49A /* AvocarrotSDKAdapters */,
+				BF8D21221F852096001F0DBD /* AvocarrotSDKAdaptersObjC */,
 			);
 		};
 /* End PBXProject section */
@@ -261,6 +440,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BF8D21211F852096001F0DBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFE031FD1F8539E1006046D1 /* AVONativeAdCell.xib in Resources */,
+				BF8D21321F852097001F0DBD /* LaunchScreen.storyboard in Resources */,
+				BF8D212F1F852097001F0DBD /* Assets.xcassets in Resources */,
+				BF8D212D1F852096001F0DBD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -270,13 +460,51 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AvocarrotSDKAdapters-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57303C06A0A274142D575D40 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AvocarrotSDKAdaptersObjC/Pods-AvocarrotSDKAdaptersObjC-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/mopub-ios-sdk/MoPub.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MoPub.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AvocarrotSDKAdaptersObjC/Pods-AvocarrotSDKAdaptersObjC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6727CC2025BE5911CB82B9E3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AvocarrotSDKAdaptersObjC/Pods-AvocarrotSDKAdaptersObjC-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		90271B2E1EFD055000552443 /* ShellScript */ = {
@@ -307,15 +535,38 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AvocarrotSDKAdapters/Pods-AvocarrotSDKAdapters-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C43CFB790AC738B8FE18D5DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AvocarrotSDKAdaptersObjC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E6FE2CEE58C5FC07AB214870 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AvocarrotSDKAdapters/Pods-AvocarrotSDKAdapters-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/mopub-ios-sdk/MoPub.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MoPub.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -330,24 +581,51 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF2D337A1EE705E8000FE1FA /* GoogleMobileAdsInterstitialViewController.swift in Sources */,
-				BF7FC9A61ECC9CCD0018BE4A /* AvocarrotMoPubCustomAdapter.swift in Sources */,
 				BFC8DE891ECB5F9600387714 /* GoogleMobileAdsNativeViewController.swift in Sources */,
-				BF514F401F0A7C5F00950B68 /* AvocarrotMoPubInterstitialCustomEvent.swift in Sources */,
+				BF8D21541F852142001F0DBD /* AvocarrotMoPubNativeCustomEvent.swift in Sources */,
+				BF8D21501F852142001F0DBD /* AvocarrotMoPubCustomAdapter.swift in Sources */,
+				BF8D21521F852142001F0DBD /* AvocarrotMoPubInterstitialCustomEvent.swift in Sources */,
 				BF057D2F1E701CDA00BBB49A /* ViewController.swift in Sources */,
+				BF8D21461F852142001F0DBD /* AvocarrotAdMobCustomEventInterstitial.swift in Sources */,
 				BF057D471E70349200BBB49A /* NativeAdCell.swift in Sources */,
+				BF8D214A1F852142001F0DBD /* AvocarrotAdMobCustomEventBanner.swift in Sources */,
 				BF057D461E70349200BBB49A /* SampleModel.swift in Sources */,
+				BF8D214E1F852142001F0DBD /* AvocarrotMoPubBannerCustomEvent.swift in Sources */,
 				BF057D2D1E701CDA00BBB49A /* AppDelegate.swift in Sources */,
-				BF7FC9A71ECC9CCD0018BE4A /* AvocarrotMoPubNativeCustomEvent.swift in Sources */,
-				BF514F421F0A8DFA00950B68 /* AvocarrotMoPubBannerCustomEvent.swift in Sources */,
-				BF7FC9A41ECC9CCD0018BE4A /* AvocarrotAdMobCustomEventNativeAd.swift in Sources */,
 				BF2D33781EE70542000FE1FA /* GoogleMobileAdsBannerViewController.swift in Sources */,
+				BF8D21481F852142001F0DBD /* AvocarrotAdMobMediatedNativeContentAd.swift in Sources */,
 				BF514F461F0AA4A300950B68 /* MoPubInterstitialViewController.swift in Sources */,
 				BF514F441F0AA47700950B68 /* MoPubBannerViewController.swift in Sources */,
+				BF8D214C1F852142001F0DBD /* AvocarrotAdMobCustomEventNativeAd.swift in Sources */,
 				BF057D441E70349200BBB49A /* AdTableCell.swift in Sources */,
-				BF2D33761EE6FD42000FE1FA /* AvocarrotAdMobCustomEventInterstitial.swift in Sources */,
-				BF2D336F1EE6F57D000FE1FA /* AvocarrotAdMobCustomEventBanner.swift in Sources */,
 				BF057D451E70349200BBB49A /* MoPubTableViewController.swift in Sources */,
-				BF7FC9A51ECC9CCD0018BE4A /* AvocarrotAdMobMediatedNativeContentAd.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8D211F1F852096001F0DBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF8D214D1F852142001F0DBD /* AvocarrotAdMobCustomEventNativeAd.swift in Sources */,
+				BF8D21531F852142001F0DBD /* AvocarrotMoPubInterstitialCustomEvent.swift in Sources */,
+				BF8D214B1F852142001F0DBD /* AvocarrotAdMobCustomEventBanner.swift in Sources */,
+				BFF983C21F8D1CAB007635B6 /* AVOGoogleMobileAdsInterstitialViewController.m in Sources */,
+				BFE031F91F8530C4006046D1 /* AVOMoPubInterstitialViewController.m in Sources */,
+				BF8D215C1F85262F001F0DBD /* AVOViewController.m in Sources */,
+				BFE031FC1F85348E006046D1 /* AVOSampleTableCell.m in Sources */,
+				BF8D21591F85236B001F0DBD /* AVOSampleModel.m in Sources */,
+				BF8D215F1F85284F001F0DBD /* AVOMoPubTableViewController.m in Sources */,
+				BF8D21351F852097001F0DBD /* main.m in Sources */,
+				BF8D21511F852142001F0DBD /* AvocarrotMoPubCustomAdapter.swift in Sources */,
+				BFF983BF1F8D1B8B007635B6 /* AVOGoogleMobileAdsBannerViewController.m in Sources */,
+				BF8D21491F852142001F0DBD /* AvocarrotAdMobMediatedNativeContentAd.swift in Sources */,
+				BF8D21271F852096001F0DBD /* AppDelegate.m in Sources */,
+				BFF983BC1F8D18FB007635B6 /* AVOGoogleMobileAdsNativeViewController.m in Sources */,
+				BFE9068A1F852D2400CE1E2F /* AVONativeAdCell.m in Sources */,
+				BF8D21551F852142001F0DBD /* AvocarrotMoPubNativeCustomEvent.swift in Sources */,
+				BFE031F61F853085006046D1 /* AVOMoPubBannerViewController.m in Sources */,
+				BF8D21471F852142001F0DBD /* AvocarrotAdMobCustomEventInterstitial.swift in Sources */,
+				BF8D214F1F852142001F0DBD /* AvocarrotMoPubBannerCustomEvent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +646,30 @@
 				BF057D361E701CDA00BBB49A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BF8D212B1F852096001F0DBD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF8D212C1F852096001F0DBD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF8D21301F852097001F0DBD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF8D21311F852097001F0DBD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BFE906861F852CEB00CE1E2F /* AVONativeAdCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFE906871F852CEB00CE1E2F /* Base */,
+			);
+			name = AVONativeAdCell.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -413,7 +715,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -456,7 +758,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -513,6 +815,73 @@
 			};
 			name = Release;
 		};
+		BF8D21361F852097001F0DBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 539592548BA3E5E1AB464715 /* Pods-AvocarrotSDKAdaptersObjC.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7C7H88B9P9;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = AvocarrotSDKAdaptersObjC/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.avocarrot.adaptersobjc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9233abed-378e-4efd-9363-ef6df14dde52";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.avocarrot.adaptersobjc";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		BF8D21371F852097001F0DBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B6A460764E88ECCC2EFFC42 /* Pods-AvocarrotSDKAdaptersObjC.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7C7H88B9P9;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = AvocarrotSDKAdaptersObjC/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.avocarrot.adaptersobjc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "93764f83-7845-4f51-9e54-021d972b6584";
+				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc com.avocarrot.adaptersobjc";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -530,6 +899,15 @@
 			buildConfigurations = (
 				BF057D3C1E701CDA00BBB49A /* Debug */,
 				BF057D3D1E701CDA00BBB49A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF8D21381F852097001F0DBD /* Build configuration list for PBXNativeTarget "AvocarrotSDKAdaptersObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF8D21361F852097001F0DBD /* Debug */,
+				BF8D21371F852097001F0DBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

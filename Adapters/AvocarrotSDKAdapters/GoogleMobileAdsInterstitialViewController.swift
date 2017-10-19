@@ -21,11 +21,13 @@ class GoogleMobileAdsInterstitialViewController: UIViewController, GADInterstiti
 
         interstitial = GADInterstitial(adUnitID: adUnitId)
         interstitial.delegate = self
+
         let request = GADRequest()
+        request.testDevices = [kGADSimulatorID]
         interstitial.load(request)
     }
 
-      // MARK: - GADInterstitialDelegate
+    // MARK: - GADInterstitialDelegate
 
     func interstitialDidReceiveAd(_ ad: GADInterstitial) {
         ad.present(fromRootViewController: self)
