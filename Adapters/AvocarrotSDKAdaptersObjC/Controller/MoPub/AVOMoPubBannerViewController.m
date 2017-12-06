@@ -17,6 +17,7 @@
 
 @end
 
+
 @implementation AVOMoPubBannerViewController
 
 - (void)viewDidLoad {
@@ -25,6 +26,18 @@
     self.mpBanner = [[MPAdView alloc] initWithAdUnitId:@"284ac577607046c5b5609ec90d04af16" size:CGSizeMake(320, 50)];
     self.mpBanner.delegate = self;
     [self.mpBanner loadAd];
+}
+
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.mpBanner startAutomaticallyRefreshingContents];
+}
+
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.mpBanner stopAutomaticallyRefreshingContents];
 }
 
 #pragma mark - MPAdViewDelegate

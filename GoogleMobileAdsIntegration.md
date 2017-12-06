@@ -25,7 +25,7 @@ Files needed for each ad type:
 | Native | `AvocarrotAdMobMediatedNativeContentAd`, `AvocarrotAdMobCustomEventNativeAd` |
 
 * Use tutorial how to [integrate native custom event](https://developers.google.com/admob/ios/native-custom-events) or [video tutorial](https://www.youtube.com/watch?v=sFew8Squ4pE)
-* Use tutorial how to [integrate banners and interstitials](https://developers.google.com/admob/ios/custom-events) 
+* Use tutorial how to [integrate banners and interstitials](https://developers.google.com/admob/ios/custom-events)
 
 ## Troubleshooting
 

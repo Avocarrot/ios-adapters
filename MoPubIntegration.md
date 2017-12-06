@@ -16,15 +16,15 @@ You can use **Avocarrot** network in **MoPub** mediation platform.
 ## 1. Setup SDKs
 
 * Integrate with MoPub SDK [https://github.com/mopub/mopub-ios-sdk/wiki/Getting-Started](https://github.com/mopub/mopub-ios-sdk/wiki/Getting-Started)
-* Add [Avocarrot SDK](https://github.com/avocarrot/ios-sdk) to your project
+* Add [Avocarrot SDK](https://github.com/avocarrot/avocarrot-ios-sdk) to your project
 * Include files needed for you into your project.
 Files needed for each ad type:
 
-| Ad type | Classes |
-|:----------------|:----------------|
-| Banners | `AvocarrotMoPubBannerCustomEvent` |
-| Interstitial | `AvocarrotMoPubInterstitialCustomEvent` |
-| Native | `AvocarrotMoPubNativeCustomEvent`, `AvocarrotMoPubCustomAdapter` |
+| Ad type | Swift Classes | Objective-C Classes |
+|:----------------|:----------------|:----------------|
+| Banners | `AvocarrotMoPubBannerCustomEvent.swift` | `AvocarrotMoPubBannerCustomEvent.h`, `AvocarrotMoPubBannerCustomEvent.m` |
+| Interstitial | `AvocarrotMoPubInterstitialCustomEvent.swift` | `AvocarrotMoPubInterstitialCustomEvent.h`, `AvocarrotMoPubInterstitialCustomEvent.m` |
+| Native | `AvocarrotMoPubNativeCustomEvent.swift`, `AvocarrotMoPubCustomAdapter.swift` | `AvocarrotMoPubNativeCustomEvent.h`, `AvocarrotMoPubCustomAdapter.h`, `AvocarrotMoPubNativeCustomEvent.m`, `AvocarrotMoPubCustomAdapter.m` |
 
 * Use tutorial how to [integrate custom networks](https://www.mopub.com/resources/docs/mopub-ui-account-setup/ad-network-set-up/)
 
@@ -35,15 +35,15 @@ Create an "Avocarrot" network in MoPub dashboard and connect it to your Ad Units
 
 * In MoPub dashboard select Networks  > Add New network
 
-![_networks](https://raw.githubusercontent.com/avocarrot/ios-adapters/master/images/first_step.png)
+![_networks](https://raw.githubusercontent.com/avocarrot/ios-adapters/master/images/MoPub/first_step.png)
 
 * Then select Custom Native Network
 
-![_add-new-network](https://raw.githubusercontent.com/avocarrot/ios-adapters/master/images/second_step.png)
+![_add-new-network](https://raw.githubusercontent.com/avocarrot/ios-adapters/master/images/MoPub/second_step.png)
 
 * Complete the fields according to the Ad Unit that you want to use
 
-![_setup](https://raw.githubusercontent.com/avocarrot/ios-adapters/master/images/third_step.png)
+![_setup](https://raw.githubusercontent.com/avocarrot/ios-adapters/master/images/MoPub/third_step.png)
 
 
 
@@ -55,13 +55,13 @@ For Native Ad Units you need to :
 
 **Custom Event Class**
 
-```javascript
+```swift
 AvocarrotMoPubNativeCustomEvent
 ```
 
 **Custom Event Class Data**
 
-```javascript
+```swift
 {"adUnit":"<AvocarrotAdUnit>"}
 ```
 

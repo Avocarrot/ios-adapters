@@ -22,6 +22,18 @@ class MoPubBannerViewController: UIViewController, MPAdViewDelegate {
         mpBanner?.loadAd()
     }
 
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        mpBanner?.startAutomaticallyRefreshingContents()
+    }
+
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        mpBanner?.stopAutomaticallyRefreshingContents()
+    }
+
     // MARK: - MPAdViewDelegate
 
     func adViewDidLoadAd(_ view: MPAdView!) {

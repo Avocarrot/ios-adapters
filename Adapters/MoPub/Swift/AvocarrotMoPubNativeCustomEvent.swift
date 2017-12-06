@@ -28,9 +28,14 @@ open class AvocarrotMoPubNativeCustomEvent: MPNativeCustomEvent {
 	 * request. This data is configurable on the MoPub website, and may be used to pass dynamic
 	 * information, such as publisher IDs.
 	 */
-	open override func requestAd(withCustomEventInfo info: [AnyHashable: Any]!) {
+	open override func requestAd(withCustomEventInfo info: [AnyHashable: Any]?) {
 
-		guard let adUnit = (info["adUnit" as NSObject] as? String) else { reportError("No AdUnit!"); return }
+		guard let customerInfo = info,
+              let adUnit = (customerInfo["adUnit" as NSObject] as? String) else {
+                print("AvocarrotMoPubNativeCustomEvent - invalid adUnitId")
+                reportError("No AdUnit!");
+                return
+        }
 
         AvocarrotSDK.shared.loadNativeAd(withAdUnitId: adUnit, success: {(nativeAd: AVONativeAssets) -> UIView? in
 
@@ -54,7 +59,9 @@ open class AvocarrotMoPubNativeCustomEvent: MPNativeCustomEvent {
 	}
 
 	func reportError(_ msg: String) {
-		delegate.nativeCustomEvent(self, didFailToLoadAdWithError: MPNativeAdNSErrorForInvalidAdServerResponse(msg))
+        if let delegate = self.delegate {
+            delegate.nativeCustomEvent(self, didFailToLoadAdWithError: MPNativeAdNSErrorForInvalidAdServerResponse(msg))
+        }
 	}
 
     /**

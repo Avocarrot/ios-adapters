@@ -67,8 +67,9 @@ open class AvocarrotMoPubCustomAdapter: NSObject, MPNativeAdAdapter {
 	 * of this event.
 	 */
 
-	open func willAttach(to view: UIView!) {
-        self.ad.registerView(forInteraction: view, forClickableSubviews: nil)
+	open func willAttach(to view: UIView?) {
+        guard let toView = view else {return}
+        self.ad.registerView(forInteraction: toView, forClickableSubviews: nil)
 
 	}
 	/*

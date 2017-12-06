@@ -14,18 +14,19 @@ import AvocarrotInterstitial
 class AvocarrotMoPubInterstitialCustomEvent: MPInterstitialCustomEvent {
     private var interstitial : AVOInterstitial?
 
-    override func requestInterstitial(withCustomEventInfo info: [AnyHashable : Any]!) {
-        guard let adUnitId = info["adUnit"] else {
+    override func requestInterstitial(withCustomEventInfo info: [AnyHashable : Any]?) {
+        guard let customerInfo = info,
+              let adUnitId = customerInfo["adUnit"] as? String else {
+            print("AvocarrotMoPubInterstitialCustomEvent - invalid adUnitId")
             requestDidFail()
             return
         }
 
-        AvocarrotSDK.shared.loadInterstitial(withAdUnitId: adUnitId as! String,
+        AvocarrotSDK.shared.loadInterstitial(withAdUnitId: adUnitId,
                                              success: { [unowned self] (interstitial) in
                                                 self.interstitial = self.preparedInterstitialWithCallbacksFor(interstitial: interstitial)
                                                 guard let bnr = self.interstitial else {
-                                                    let error = NSError(domain: "com.MoPub.CustomEvent", code: 901)
-                                                    self.delegate.interstitialCustomEvent(self, didFailToLoadAdWithError: error)
+                                                    self.requestDidFail()
                                                     return
                                                 }
                                                 self.delegate.interstitialCustomEvent(self, didLoadAd: bnr)
@@ -35,12 +36,13 @@ class AvocarrotMoPubInterstitialCustomEvent: MPInterstitialCustomEvent {
     }
 
 
-    override func showInterstitial(fromRootViewController rootViewController: UIViewController!) {
-        guard let fullscreen = interstitial else {
+    override func showInterstitial(fromRootViewController rootViewController: UIViewController?) {
+        guard let vc = rootViewController,
+              let fullscreen = interstitial else {
             return
         }
 
-        fullscreen.show(from: rootViewController)
+        fullscreen.show(from: vc)
     }
 
 
@@ -66,7 +68,9 @@ class AvocarrotMoPubInterstitialCustomEvent: MPInterstitialCustomEvent {
 
     
     private func requestDidFail() {
-        let error = NSError(domain: "com.google.CustomEvent", code: 901)
-        self.delegate.interstitialCustomEvent(self, didFailToLoadAdWithError: error)
+        let error = NSError(domain: "com.mopub.InterstitialCustomEvent", code: 901)
+        if let delegate = self.delegate {
+            delegate.interstitialCustomEvent(self, didFailToLoadAdWithError: error)
+        }
     }
 }

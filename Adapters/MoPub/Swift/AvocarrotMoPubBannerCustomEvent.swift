@@ -16,8 +16,16 @@ class AvocarrotMoPubBannerCustomEvent: MPBannerCustomEvent {
     private var banner: AVOBannerView?
 
     override func requestAd(with size: CGSize,
-                            customEventInfo info: [AnyHashable : Any]!) {
+                            customEventInfo info: [AnyHashable : Any]?) {
+        guard let customerInfo = info,
+              let adUnitId = customerInfo["adUnit"] as? String else {
+                print("AvocarrotMoPubBannerCustomEvent - invalid adUnitId")
+                requestDidFail()
+                return
+        }
+        
         if CGSize(width: 320, height: 50) != size && CGSize(width: 728, height: 90) != size && CGSize(width: 300, height: 250) != size {
+            print("AvocarrotMoPubInterstitialCustomEvent - unsupported banner size!")
             requestDidFail()
             return
         }
@@ -29,13 +37,8 @@ class AvocarrotMoPubBannerCustomEvent: MPBannerCustomEvent {
             avosize = AVOBannerViewSizeMREC
         }
 
-        guard let adUnitId = info["adUnit"] else {
-            requestDidFail()
-            return
-        }
-
         AvocarrotSDK.shared.loadBanner(with: avosize,
-                                       adUnitId: adUnitId as! String,
+                                       adUnitId: adUnitId,
                                        success: {  [weak self] (banner) in
                                         self?.banner = self?.preparedBannerWithCallbacksFor(banner: banner)
                                         guard let bnr = self?.banner else {
@@ -69,7 +72,7 @@ class AvocarrotMoPubBannerCustomEvent: MPBannerCustomEvent {
 
     
     private func requestDidFail() {
-        let error = NSError(domain: "com.mopub.CustomEvent", code: 901)
+        let error = NSError(domain: "com.mopub.BannerCustomEvent", code: 901)
         if let delegate = self.delegate {
             delegate.bannerCustomEvent(self, didFailToLoadAdWithError: error)
         }

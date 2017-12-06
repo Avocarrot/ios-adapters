@@ -39,21 +39,23 @@ class AvocarrotAdMobCustomEventBanner: NSObject, GADCustomEventBanner {
             size = AVOBannerViewSizeMREC
         }
 
-        guard let ad  = AvocarrotSDK.shared.loadBanner(with: size, adUnitId: adUnitId, success: { [weak self] (bannerAd) in
+        AvocarrotSDK.shared.loadBanner(with: size, adUnitId: adUnitId, success: { [weak self] (bannerAd) in
             guard let sSelf = self else {return}
+            sSelf.subscribeBannerToEvents(banner: bannerAd)
+            sSelf.bannerAd = bannerAd
             sSelf.delegate?.customEventBanner(sSelf, didReceiveAd: bannerAd)
         }, failure: { [weak self] (error) in
             guard let sSelf = self else {return}
             sSelf.delegate?.customEventBanner(sSelf, didFailAd: error)
         })
-        else {
-            return
-        }
-
-        ad.onClick({
-            self.delegate?.customEventBannerWasClicked(self)
-        })
-
-        bannerAd = ad
     }
+
+
+    private func subscribeBannerToEvents(banner: AVOBannerView) {
+        banner.onClick { [unowned self] in
+            self.delegate?.customEventBannerWasClicked(self)
+        }
+        banner.autoUpdate = false
+    }
+
 }

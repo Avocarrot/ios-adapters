@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     }
 
     private func setupUI() {
-        self.navigationController?.navigationBar.tintColor = UIColor(colorLiteralRed: 240.0/255, green: 103.0/255, blue: 63.0/255, alpha: 1.0)
+        self.navigationController?.navigationBar.tintColor = UIColor(red: 240.0/255, green: 103.0/255, blue: 63.0/255, alpha: 1.0)
     }
 
 }

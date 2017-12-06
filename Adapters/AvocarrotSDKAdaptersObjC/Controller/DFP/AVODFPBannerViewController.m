@@ -6,21 +6,21 @@
 //  Copyright © 2017 Glispa GmbH. All rights reserved.
 //
 
-#import "AVOGoogleMobileAdsBannerViewController.h"
+#import "AVODFPBannerViewController.h"
 #import <GoogleMobileAds/GoogleMobileAds.h>
 
-@interface AVOGoogleMobileAdsBannerViewController () <GADBannerViewDelegate>
+@interface AVODFPBannerViewController () <GADBannerViewDelegate>
 
 @property (nonatomic, weak) IBOutlet GADBannerView *bannerView;
 
 @end
 
-@implementation AVOGoogleMobileAdsBannerViewController
+@implementation AVODFPBannerViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.bannerView.adUnitID = @"ca-app-pub-4028010822193978/1063771648";
+    self.bannerView.adUnitID = @"/5826056/MORFIX_IPHONE_320x50_TEST";
     self.bannerView.rootViewController = self;
     self.bannerView.delegate = self;
 
@@ -40,7 +40,6 @@
     [super viewWillDisappear:animated];
     self.bannerView.autoloadEnabled = NO;
 }
-
 
 #pragma mark - GADBannerViewDelegate
 
